@@ -17,9 +17,9 @@
         </tr>
 
         <?php
-            $user = "alumno";
-            $password = "Password123#@!";
-            $database = "bbdd";
+            $user = "YOURUSER";
+            $password = "YOURPASSWORD";
+            $database = "YOURDATABASE";
 
             try {
 
@@ -28,7 +28,7 @@
                 $siteVisitsMap = 'siteStats';
 
                 $i = 1;
-                foreach($db->query("SELECT dir_ip, visitas FROM contador") as $row) {
+                foreach($db->query("SELECT dir_ip, vis FROM conta") as $row) {
                     echo "<tr>";
                       echo "<td align = 'left'>"   . $i . "."     . "</td>";
                       echo "<td align = 'left'>"   . $row['dir_ip']     . "</td>";
